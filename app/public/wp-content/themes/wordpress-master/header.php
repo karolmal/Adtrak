@@ -65,7 +65,7 @@
 	<header id="masthead" class="site-header">
 
 		<div class="bg-dark d-none d-xl-block">
-			<div class="container px-0">
+			<div class="container px-2">
 				<nav class="top-nav">
 					<ul class="d-flex align-items-center justify-content-end">
 						<li class="top-nav-item"><a class="text-white text-decoration-none">ABOUT US</a></li>
@@ -77,7 +77,7 @@
 				</nav>
 			</div>
 		</div>
-		<div class="container block d-flex justify-content-between align-items-center">
+		<div class="container block px-2 d-flex justify-content-between align-items-center">
 			<div class="d-flex flex-column">
 				<img src="/wp-content/uploads/2024/03/adtrack-logo.png" alt="Adtrack Logo" loading="lazy" width="160px">
 				<p class="logo-text fw-300">Kitchens</p>
@@ -111,7 +111,7 @@
 	</header>
 	<!-- #masthead .site-header -->
 	<div id="hero">
-		<div class="container">
+		<div class="container px-2">
 
 			<div class="row mt-0">
 				<div class="col-lg-7 d-flex " style="position: relative;">
@@ -153,49 +153,7 @@
 		</div>
 	</div>
 
-	<div id="service-list">
-		<div class="container px-0">
-			<div class="row g-3 g-lg-5 mt-0">
-				<div class="col-12 mt-0 mb-0">
-					<div class="bg-white p-5 pb-0" style="transform: translateY(-50%); width: fit-content;">
-						<h2 class="hero-second-title">Our <span class="orange-italic">Range</span> of Kitchens</h2>
-					</div>
-
-				</div>
-				<?php if (have_rows('service_list', 11)) : ?>
-
-
-
-					<?php while (have_rows('service_list', 11)) : the_row(); ?>
-
-						<div class="col-lg-4 mt-lg-0 range-card">
-
-							<div style="position: relative;">
-								<img src="<?php the_sub_field('background_image'); ?>" style="max-width: 450px;" width="100%" height="100%">
-								<a href="<?php the_sub_field('url'); ?>" class="p-3 d-flex flex-column text-decoration-none range-button" style="position: absolute; left: 0; bottom: 0;">
-									<div>
-										<div class="d-flex align-items-center">
-											<p class="me-3 systems-title"><?php the_sub_field('title'); ?></p>
-											<img src="/wp-content/uploads/2024/03/icons8-arrow-50.png" width="27px" alt="">
-										</div>
-										<p class="systems-subtitle">KITCHENS</p>
-									</div>
-
-								</a>
-							</div>
-
-						</div>
-
-					<?php endwhile; ?>
-
-
-
-				<?php endif; ?>
-
-
-			</div>
-		</div>
-	</div>
+	
 
 
 	<main><!-- start the page containter -->
